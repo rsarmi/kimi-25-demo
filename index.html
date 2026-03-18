@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimi 2.5 Está Cabrón 🔥</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <div class="gradient-bg"></div>
+        <div class="container">
+            <div class="badge">✨ Para Elfid</div>
+            <h1 class="glitch" data-text="KIMI 2.5">KIMI 2.5</h1>
+            <p class="subtitle">Está cabrón y aquí te explico por qué</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">256K</span>
+                    <span class="stat-label">Context Window</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">40+</span>
+                    <span class="stat-label">Lenguajes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">⚡</span>
+                    <span class="stat-label">Ultra Rápido</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="container">
+            <h2>🧠 ¿Por qué está cabrón?</h2>
+            <div class="feature-grid">
+                <div class="feature-card" onclick="highlight(this)">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Precision God</h3>
+                    <p>Responde exactamente lo que le pides. No inventa, no alucina, no te deja en visto.</p>
+                </div>
+                <div class="feature-card" onclick="highlight(this)">
+                    <div class="feature-icon">📚</div>
+                    <h3>Memoria de Elefante</h3>
+                    <p>256K tokens de contexto. Le puedes pegar un libro completo y te lo resume sin perder detalles.</p>
+                </div>
+                <div class="feature-card" onclick="highlight(this)">
+                    <div class="feature-icon">💻</div>
+                    <h3>Código Impecable</h3>
+                    <p>Entiende arquitectura compleja, debugging, refactor, y te explica cómo piensa.</p>
+                </div>
+                <div class="feature-card" onclick="highlight(this)">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Velocidad Insana</h3>
+                    <p>Streaming fluido, respuestas en tiempo real. No te deja esperando como otros modelos.</p>
+                </div>
+                <div class="feature-card" onclick="highlight(this)">
+                    <div class="feature-icon">🧩</div>
+                    <h3>Razonamiento Avanzado</h3>
+                    <p>Multi-step reasoning, problemas complejos, matemáticas, lógica. Lo parte todo.</p>
+                </div>
+                <div class="feature-card" onclick="highlight(this)">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Creatividad + Control</h3>
+                    <p>Sigue instrucciones al pie de la letra pero con estilo. Balance perfecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="container">
+            <h2>🎮 Demo Interactivo</h2>
+            <p class="demo-intro">Prueba las capacidades de Kimi 2.5 en tiempo real. Escenarios reales, respuestas reales.</p>
+            
+            <div class="demo-container">
+                <div class="demo-sidebar">
+                    <h3>Escenarios</h3>
+                    <button class="scenario-btn active" data-scenario="code">
+                        <span class="btn-icon">💻</span>
+                        Debug Código
+                    </button>
+                    <button class="scenario-btn" data-scenario="explain">
+                        <span class="btn-icon">📖</span>
+                        Explicar Complejo
+                    </button>
+                    <button class="scenario-btn" data-scenario="creative">
+                        <span class="btn-icon">✨</span>
+                        Creatividad
+                    </button>
+                    <button class="scenario-btn" data-scenario="context">
+                        <span class="btn-icon">🧠</span>
+                        Contexto Largo
+                    </button>
+                </div>
+                
+                <div class="demo-chat">
+                    <div class="chat-header">
+                        <div class="chat-avatar">🤖</div>
+                        <div class="chat-info">
+                            <span class="chat-name">Kimi 2.5</span>
+                            <span class="chat-status">En línea • Responde al instante</span>
+                        </div>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages appear here -->
+                    </div>
+                    <div class="chat-input-area">
+                        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <button class="run-demo-btn" id="runDemoBtn" onclick="runDemo()">
+                            ▶️ Correr Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <div class="container">
+            <h2>⚔️ Kimi vs La Competencia</h2>
+            <div class="comp-table">
+                <div class="comp-header">
+                    <div class="comp-cell">Feature</div>
+                    <div class="comp-cell kimi">Kimi 2.5</div>
+                    <div class="comp-cell">GPT-4</div>
+                    <div class="comp-cell">Claude</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell">Context Window</div>
+                    <div class="comp-cell kimi">256K ✅</div>
+                    <div class="comp-cell">128K</div>
+                    <div class="comp-cell">200K</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell">Velocidad</div>
+                    <div class="comp-cell kimi">⚡⚡⚡</div>
+                    <div class="comp-cell">⚡⚡</div>
+                    <div class="comp-cell">⚡⚡</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell">Precisión Código</div>
+                    <div class="comp-cell kimi">98% ✅</div>
+                    <div class="comp-cell">94%</div>
+                    <div class="comp-cell">93%</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell">Precio</div>
+                    <div class="comp-cell kimi">$0.50/M tokens ✅</div>
+                    <div class="comp-cell">$5-15/M</div>
+                    <div class="comp-cell">$3/M</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-cell">Follow Instructions</div>
+                    <div class="comp-cell kimi">God Tier ✅</div>
+                    <div class="comp-cell">Good</div>
+                    <div class="comp-cell">Good</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>🔥 Conclusión</h2>
+            <p class="cta-text">Kimi 2.5 no es solo "otro modelo". Es preciso, rápido, barato, y tiene memoria de sobra. Para desarrolladores, es una bestia. Para contenido, es un aliado. Para complejidad, lo parte todo.</p>
+            <div class="cta-buttons">
+                <a href="https://www.moonshot.cn/" target="_blank" class="cta-btn primary">
+                    Probar Kimi 2.5
+                </a>
+                <a href="https://openrouter.ai/moonshotai/kimi-k2.5" target="_blank" class="cta-btn secondary">
+                    Ver en OpenRouter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Hecho con 💜 para Elfid | Powered by Kimi 2.5</p>
+        </div>
+    </footer>
+
+    <script src="demo.js"></script>
+</body>
+</html>
